@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+h1 {
+    font-size: 4.2rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Yellowtail', cursive;
+    margin: 0;
+}
+
+.text-container{
+    position: absolute;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #FF10F0,
+            0 0 30px #FF10F0,
+            0 0 40px #FF10F0,
+            0 0 10px #FF10F0,
+            0 0 15px #FF10F0;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 40px 0 45px 0;
 }
