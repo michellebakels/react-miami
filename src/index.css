@@ -20,6 +20,29 @@ code {
   color: #fff;
 }
 
+.text-container{
+    position: absolute;
+}
+
+@media screen and (prefers-reduced-motion) {
+    .neonText {
+        animation: none;
+        color: #fff;
+        text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #FF10F0,
+                0 0 30px #FF10F0,
+                0 0 40px #FF10F0,
+                0 0 10px #FF10F0,
+                0 0 15px #FF10F0;
+    }
+    .text-container{
+        position: relative;
+    }
+}
+
 h1 {
     font-size: 4.2rem;
     text-align: center;
@@ -28,9 +51,6 @@ h1 {
     margin: 0;
 }
 
-.text-container{
-    position: absolute;
-}
 
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
